@@ -9,6 +9,7 @@
   margin: 100px 50px;
 }
 .cart-container {
+  height: 100%;
   background: rgba(255, 153, 0, 0.3);
 }
 
@@ -23,5 +24,8 @@
     grid-template-columns: repeat(1, 1fr);
     gap: 15px;
     margin: auto 20px;
+  }
+  .shop-container{
+    grid-template-columns: repeat(1,1fr);
   }
 }

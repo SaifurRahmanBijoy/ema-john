@@ -1,6 +1,7 @@
 .header {
   background-color: #1c2b35;
   height: 60px;
+  width: 100vw;
   display: flex;
   justify-content: space-around;
   align-items: center;
@@ -19,11 +20,13 @@
   color: orange;
 }
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 700px) {
   .header {
     flex-direction: column;
+    width: 100%;
+    padding: 20px 0px;
   }
   .header a {
-    margin-left: 10px;
+    margin-bottom: 10px;
   }
 }
