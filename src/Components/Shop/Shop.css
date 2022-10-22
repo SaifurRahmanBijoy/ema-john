@@ -6,9 +6,10 @@
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   gap: 45px;
-  margin: 100px 50px;
+  margin: 50px 50px;
 }
 .cart-container {
+  margin-top: 0;
   height: 100%;
   background: rgba(255, 153, 0, 0.3);
 }
@@ -27,5 +28,8 @@
   }
   .shop-container{
     grid-template-columns: repeat(1,1fr);
+  }
+  .cart-container{
+    margin-top: 25px;
   }
 }

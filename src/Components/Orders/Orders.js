@@ -34,7 +34,7 @@ const Orders = () => {
         )}
       </div>
       {/* -------- */}
-      <div className="cart-container">
+      <div className="cart-container m-2">
         <Cart clearCart={clearCart} cart={cart}></Cart>
       </div>
     </div>

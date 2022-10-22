@@ -11,7 +11,7 @@
   z-index: 1;
 }
 .header a {
-  margin-left: 36px;
+  margin: 0px 20px;
   text-decoration: none;
   color: #ffffff;
   font-size: 17px;
@@ -25,7 +25,8 @@
   .header {
     flex-direction: column;
     width: 100%;
-    padding: 20px 0px;
+    padding: 20px 0px; 
+    margin-bottom: 25px;
   }
   .header a {
     margin-bottom: 10px;
