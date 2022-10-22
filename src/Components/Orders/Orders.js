@@ -30,12 +30,21 @@ const Orders = () => {
           ></ReviewItem>
         ))}
         {cart.length === 0 && (
-          <h2 className="px-3 text-center my-8 text-3xl font-serif">You have no items in your cart! Please do <Link className="text-blue-400 underline" to='/'>Shopping</Link>!</h2>
+          <h2 className="px-3 text-center my-8 text-3xl font-serif">
+            You have no items in your cart! Please do{" "}
+            <Link className="text-blue-400 underline" to="/">
+              Shopping
+            </Link>
+            !
+          </h2>
         )}
       </div>
       {/* -------- */}
       <div className="cart-container m-2">
         <Cart clearCart={clearCart} cart={cart}></Cart>
+        <Link className="pl-5" to="/shipping">
+          <button className="bg-green-400 text-gray-700 px-20 sm:px-9 rounded py-2 mb-3">Proceed Shipping</button>
+        </Link>
       </div>
     </div>
   );
