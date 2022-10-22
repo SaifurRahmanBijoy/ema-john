@@ -30,7 +30,7 @@ const Orders = () => {
           ></ReviewItem>
         ))}
         {cart.length === 0 && (
-          <h2>You have no items in your cart! Please do <Link to='/'>Shopping</Link>!</h2>
+          <h2 className="px-3 text-center my-8 text-3xl font-serif">You have no items in your cart! Please do <Link className="text-blue-400 underline" to='/'>Shopping</Link>!</h2>
         )}
       </div>
       {/* -------- */}
