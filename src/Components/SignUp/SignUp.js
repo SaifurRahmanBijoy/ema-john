@@ -60,7 +60,7 @@ const SignUp = () => {
           Login!
         </Link>
       </p>
-      <hr className="mb-5"/>
+      <hr className="mb-5" />
     </div>
   );
 };
