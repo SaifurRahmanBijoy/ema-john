@@ -9,7 +9,7 @@ const Orders = () => {
   const [cart, setCart] = useState(initialCart);
 
   const handleRemoveItem = (id) => {
-    const remaining = cart.filter((product) => product.id !== id);
+    const remaining = cart.filter((product) => product._id !== id);
     setCart(remaining);
     removeFromDb(id);
   };
@@ -24,7 +24,7 @@ const Orders = () => {
       <div className="orders-container">
         {cart.map((product) => (
           <ReviewItem
-            key={product.id}
+            key={product._id}
             handleRemoveItem={handleRemoveItem}
             product={product}
           ></ReviewItem>
@@ -43,7 +43,9 @@ const Orders = () => {
       <div className="cart-container m-2">
         <Cart clearCart={clearCart} cart={cart}></Cart>
         <Link className="pl-5" to="/shipping">
-          <button className="bg-green-400 text-gray-700 px-20 sm:px-9 rounded py-2 mb-3">Proceed Shipping</button>
+          <button className="bg-green-400 text-gray-700 px-20 sm:px-9 rounded py-2 mb-3">
+            Proceed Shipping
+          </button>
         </Link>
       </div>
     </div>
